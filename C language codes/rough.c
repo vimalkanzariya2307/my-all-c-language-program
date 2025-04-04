@@ -439,6 +439,7 @@ int main()
 // {
 //     int i,j;
 //     for(i=0;i<2;i++)
+
 //     {
 //         for(j=0;j<2;j++)
 //         {
@@ -536,7 +537,6 @@ int main()
  *
  */
 
-
 //  #include<stdio.h>
 //  void sum();
 //  int main()
@@ -553,65 +553,118 @@ int main()
 //     printf("your ans is : %d ",result);
 //  }
 
-//without return type and without argument function
+// without return type and without argument function
 
-#include <stdio.h>
-void Sum(); 
-int main() {
-    Sum(); 
-    return 0;
-}
-void Sum() { 
-    int num1, num2;
-    printf("Enter two numbers: ");
-    scanf("%d %d", &num1, &num2);
-    printf("Sum: %d\n", num1 + num2);
-}
+// #include <stdio.h>
+// void Sum();
+// int main() {
+//     Sum();
+//     return 0;
+// }
+// void Sum() {
+//     int num1, num2;
+//     printf("Enter two numbers: ");
+//     scanf("%d %d", &num1, &num2);
+//     printf("Sum: %d\n", num1 + num2);
+// }
 
-//with return type and without argument function
+// //with return type and without argument function
 
-#include <stdio.h>
-int Sum2();
-int main() {
-    int result = Sum2(); 
-    printf("Sum: %d\n", result);
-    return 0;
-}
-int Sum2() { 
-    int num1, num2;
-    printf("Enter two numbers: ");
-    scanf("%d %d", &num1, &num2);
-    return num1 + num2; 
-}
+// #include <stdio.h>
+// int Sum2();
+// int main() {
+//     int result = Sum2();
+//     printf("Sum: %d\n", result);
+//     return 0;
+// }
+// int Sum2() {
+//     int num1, num2;
+//     printf("Enter two numbers: ");
+//     scanf("%d %d", &num1, &num2);
+//     return num1 + num2;
+// }
 
-//without return type and with argument function
+// //without return type and with argument function
 
-#include <stdio.h>
-void Sum3(int a, int b);
-int main() {
-    int num1, num2;
-    printf("Enter two numbers: ");
-    scanf("%d %d", &num1, &num2);
-    Sum3(num1, num2); 
-    return 0;
-}
-void Sum3(int a, int b) { 
-    printf("Sum: %d\n", a + b); 
-}
+// #include <stdio.h>
+// void Sum3(int a, int b);
+// int main() {
+//     int num1, num2;
+//     printf("Enter two numbers: ");
+//     scanf("%d %d", &num1, &num2);
+//     Sum3(num1, num2);
+//     return 0;
+// }
+// void Sum3(int a, int b) {
+//     printf("Sum: %d\n", a + b);
+// }
 
-//with return type and with argument function
+// //with return type and with argument function
 
-#include <stdio.h>
-int Sum4(int a, int b);
-int main() {
-    int num1, num2;
-    printf("Enter two numbers: ");
-    scanf("%d %d", &num1, &num2);
-    int result = Sum4(num1, num2); 
-    printf("Sum: %d\n", result);
-    return 0;
-}
-int Sum4(int a, int b) { 
-    return a + b; 
-}
+// #include <stdio.h>
+// int Sum4(int a, int b);
+// int main() {
+//     int num1, num2;
+//     printf("Enter two numbers: ");
+//     scanf("%d %d", &num1, &num2);
+//     int result = Sum4(num1, num2);
+//     printf("Sum: %d\n", result);
+//     return 0;
+// }
+// int Sum4(int a, int b) {
+//     return a + b;
+// }
 
+// write a program to find the sum of 2 numbers first is call by value and second is call by refrance
+
+// #include <stdio.h>
+// int sum1(int a,int c);
+// void main()
+// {
+//     int num1;
+//     int num2;
+//     printf("enter your num1:\n");
+//     scanf("%d", &num1);
+//     printf("enter your num2:\n");
+//     scanf("%d", &num2);
+//     printf("sum : %d",sum1(num1, num2));
+// }
+// int sum1(int a,int c)
+// {
+//     return a + c;
+// }
+
+// #include<stdio.h>
+// int sum2(int * a,int *b)
+// {
+//     return  *a + *b;
+// }
+// void main()
+// {
+//   int a,b;
+//   scanf("%d %d",&a,&b);
+//   printf("%d",sum2(&a,&b));
+// }
+
+//swaping value
+
+// #include<stdio.h>
+// void main(){
+//     int a,b,c;
+//     a=10;
+//     b=12;
+//     c = a;
+//     a = b;
+//     b = c;
+//     printf("%d %d",a,b);
+// }
+#include<stdio.h>
+void main(){
+    int a,b,c;
+    a=10;
+    b=12;
+    a=a-b;
+    b=a+b;
+    a=b-a;
+    printf("a:%d b:%d",a,b);
+}
